@@ -1,0 +1,45 @@
+//pseudo code
+
+get the key {
+    - single command line argument provided
+    - make sure arguments contains only digits . no text or other things accepted
+    use isdigit() function 
+    convert argument to integer
+    {
+        convert argument to integer to check for figits only
+        by default the argv value is string
+        to conver string to digit
+        use atoi() function in stdlib.h library
+
+    }
+
+    get plain text
+    {
+        get_string for text
+        enchiper the text
+        {
+            if uppercase the letter should be uppercase
+            if lower than lower
+            if non alphabetic then it should be displayed as it as
+            function will help
+            islower
+            isupper
+            isalpha
+        }
+
+        how to convert
+        {
+            formula
+            c[i] = (p[i] + k)% 26
+            convert ascii to alpahbetical index
+            convert index with key ti cipher
+            convert index back to ascii
+
+        }
+
+        print the ciphertext() {
+            printf("Result");
+        }
+    }
+
+}
