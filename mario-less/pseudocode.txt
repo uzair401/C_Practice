@@ -1,0 +1,6 @@
+first of all write boiler plate code.
+execute main function.
+tak einput from user and check if its inclusive to 1-8.
+if not then repromt and take input again from the user.
+now create a loop which will display # exact times according to input.
+inside loop code.
