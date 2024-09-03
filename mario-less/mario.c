@@ -3,28 +3,23 @@
 
 int main(void)
 {
-    // variable declaration
-    int x;
-    // do-while loop to show output and then check for condition
+    int num = 0 ;
     do
     {
-        x = get_int("Height: ");
+        num = get_int("Height: ");
     }
-    while (x < 1 || x > 8);
-    // loop to check the condition
-    for (int i = 0; i < x; i++)
+    while (num<1 || num>8);
+
+    for(int i = 0; i<num; i++)
     {
-        //inner loopcd  generating space
-        for (int j = 0; j < x - i - 1; j++)
+        for (int p=0; p < num - i - 1;p++)
         {
             printf(" ");
         }
-        //another inner loop to display '#'
-        for (int k = 0; k < i + 1; k++)
+        for(int j =0; j<i+1;j++)
         {
             printf("#");
         }
-        //jump to new line
         printf("\n");
     }
 }

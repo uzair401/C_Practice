@@ -3,39 +3,28 @@
 
 int main(void)
 {
-    // declaring variable
-    int height = 0;
-    //checking conditions with a forever loop
+    int num = 0 ;
     do
     {
-        height = get_int("Height: ");
+        num = get_int("Height: ");
     }
-    while (height < 1 || height > 8);
-    //executing a for loop
-    for (int i = 0; i < height; i++)
+    while (num<1 || num>8);
+
+    for(int i = 0; i<num; i++)
     {
-        // Printing spaces for the first pyramid
-        for (int j = 0; j < height - i - 1; j++)
+        for (int j=0; j < num - i - 1;j++)
         {
             printf(" ");
         }
-
-        // Printing # symbols for the first pyramid
-        for (int k = 0; k < i + 1; k++)
+        for(int k =0; k<i+1;k++)
         {
             printf("#");
         }
-
-        // Printing spaces between the pyramids
         printf("  ");
-
-        // Printing # symbols for the second pyramid
-        for (int q = 0; q < i + 1; q++)
-        {
-            printf("#");
-        }
-
-        // Moving control to a new line
+            for(int q = 0; q<i+1;q++)
+            {
+                printf("#");
+            }
         printf("\n");
     }
 }
